@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/architect/src/builders-schema.json",
+  "builders": {
+    "deploy": {
+      "implementation": "./dist/builders/deploy.builder",
+      "schema": "./dist/builders/schema.json",
+      "description": "Deploy to Cloud Foundry"
+    }
+  }
+}

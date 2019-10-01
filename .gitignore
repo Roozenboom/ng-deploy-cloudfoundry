@@ -1,0 +1,27 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/coverage
+npm-debug.log
+yarn-error.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db

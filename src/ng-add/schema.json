@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ng-deploy-cloudfoundry-ng-add-schematic",
+  "title": "ng-deploy-cloudfoundry ng-add schematic",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "sso": {
+      "type": "boolean",
+      "description": "Single Sign-On (SSO) to login to Cloud Foundry",
+      "default": false,
+      "x-prompt": "Use one-time passcode (sso) to Cloud Foundry login?"
+    },
+    "skipSslValidation": {
+      "type": "boolean",
+      "description": "Skip verification of the API endpoint. Not recommended!",
+      "default": false
+    }
+  },
+  "required": [],
+  "additionalProperties": true
+}

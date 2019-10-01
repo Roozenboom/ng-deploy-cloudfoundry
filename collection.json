@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Angular Deploy Cloud Foundry to the application without affecting any templates",
+      "factory": "./dist/ng-add/index#ngAdd",
+      "schema": "./dist/ng-add/schema.json",
+      "aliases": ["install"]
+    }
+  }
+}

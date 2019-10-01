@@ -1,0 +1,23 @@
+{
+  "id": "Schema",
+  "title": "Cloud Foundry Deployment",
+  "description": "Deployment of Angular CLI applications to Cloud Foundry",
+  "properties": {
+    "configuration": {
+      "type": "string",
+      "default": "production",
+      "description": "A named build target, as specified in the `configurations` section of angular.json.",
+      "alias": "c"
+    },
+    "noBuild": {
+      "type": "boolean",
+      "default": false,
+      "description": "Skip build process during deployment."
+    },
+    "randomRoute": {
+      "type": "boolean",
+      "default": false,
+      "description": "Create a random route for the app."
+    }
+  }
+}
