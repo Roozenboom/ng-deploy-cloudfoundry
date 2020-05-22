@@ -1,6 +1,6 @@
 {
   "name": "ng-deploy-cloudfoundry",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Deploy Angular projects to Cloud Foundry",
   "author": {
     "name": "Richard Roozenboom",
