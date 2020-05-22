@@ -1,15 +1,14 @@
-import { JsonParseMode, parseJson } from '@angular-devkit/core';
+import { experimental, JsonParseMode, parseJson } from '@angular-devkit/core';
 import { SchematicsException, Tree } from '@angular-devkit/schematics';
-import { WorkspaceProject, WorkspaceSchema } from 'schematics-utilities';
 import { Options } from './types';
 
 export class AngularJson {
   tree: Tree;
   path: string;
   content: string;
-  schema: WorkspaceSchema;
+  schema: experimental.workspace.WorkspaceSchema;
   projectName: string;
-  project: WorkspaceProject;
+  project: experimental.workspace.WorkspaceProject;
 
   constructor(tree: Tree, options: Options) {
     this.tree = tree;
@@ -36,9 +35,9 @@ export class AngularJson {
   }
 
   getSchema() {
-    let schema: WorkspaceSchema;
+    let schema: experimental.workspace.WorkspaceSchema;
     try {
-      schema = (parseJson(this.content, JsonParseMode.Loose) as {}) as WorkspaceSchema;
+      schema = (parseJson(this.content, JsonParseMode.Loose) as {}) as experimental.workspace.WorkspaceSchema;
     } catch (e) {
       throw new SchematicsException(`Could not parse angular.json: ` + e.message);
     }

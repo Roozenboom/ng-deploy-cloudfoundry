@@ -31,6 +31,9 @@
   ],
   "builders": "./builders.json",
   "schematics": "./collection.json",
+  "ng-add": {
+    "save": "devDependencies"
+  },
   "scripts": {
     "build": "yarn clean && yarn compile && yarn copy",
     "clean": "rimraf dist",
@@ -61,8 +64,7 @@
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "js-yaml": "^3.13.1",
-    "schematics-utilities": "^1.1.2"
+    "js-yaml": "^3.13.1"
   },
   "jest": {
     "roots": [
